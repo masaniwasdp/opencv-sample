@@ -26,7 +26,7 @@ def make_binary(frame):
         adaptiveMethod=cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
         thresholdType=cv2.THRESH_BINARY,
         blockSize=3,
-        C=3,
+        C=0,
     )
 
 

@@ -69,14 +69,7 @@ def apply_nl_means(frame):
     Returns: フィルタを適用した画像。
     """
 
-    return cv2.fastNlMeansDenoisingColored(
-        src=frame,
-        dst=None,
-        h=5,
-        hColor=5,
-        templateWindowSize=7,
-        searchWindowSize=21,
-    )
+    return cv2.fastNlMeansDenoisingColored(frame, h=5, hColor=5)
 
 
 def add_noise(frame, sigma):
