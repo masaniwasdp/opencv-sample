@@ -74,7 +74,7 @@ def apply_canny(frame):
     Returns: エッジ画像。
     """
 
-    return cv2.Canny(frame, threshold1=75, threshold2=100)
+    return cv2.Canny(frame, threshold1=100, threshold2=100)
 
 
 def main():
